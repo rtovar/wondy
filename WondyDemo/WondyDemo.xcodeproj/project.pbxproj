@@ -1,0 +1,330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1381DEF71C7302DC007B6374 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1381DEF61C7302DC007B6374 /* AppDelegate.swift */; };
+		1381DEF91C7302DC007B6374 /* WDCenterListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1381DEF81C7302DC007B6374 /* WDCenterListVC.swift */; };
+		1381DEFB1C7302DC007B6374 /* WDCenterDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1381DEFA1C7302DC007B6374 /* WDCenterDetailVC.swift */; };
+		1381DEFE1C7302DC007B6374 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1381DEFC1C7302DC007B6374 /* Main.storyboard */; };
+		1381DF001C7302DC007B6374 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1381DEFF1C7302DC007B6374 /* Assets.xcassets */; };
+		1381DF031C7302DC007B6374 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1381DF011C7302DC007B6374 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1381DEF31C7302DB007B6374 /* WondyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WondyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1381DEF61C7302DC007B6374 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1381DEF81C7302DC007B6374 /* WDCenterListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WDCenterListVC.swift; path = WondyDemo/src/ui/vc/WDCenterListVC.swift; sourceTree = "<group>"; };
+		1381DEFA1C7302DC007B6374 /* WDCenterDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WDCenterDetailVC.swift; path = WondyDemo/src/ui/vc/WDCenterDetailVC.swift; sourceTree = "<group>"; };
+		1381DEFD1C7302DC007B6374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1381DEFF1C7302DC007B6374 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1381DF021C7302DC007B6374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1381DF041C7302DC007B6374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1381DEF01C7302DB007B6374 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1381DEEA1C7302DB007B6374 = {
+			isa = PBXGroup;
+			children = (
+				1381DEF51C7302DC007B6374 /* WondyDemo */,
+				1381DEF41C7302DB007B6374 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1381DEF41C7302DB007B6374 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1381DEF31C7302DB007B6374 /* WondyDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1381DEF51C7302DC007B6374 /* WondyDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1381DF0D1C7307D5007B6374 /* src */,
+				1381DEFC1C7302DC007B6374 /* Main.storyboard */,
+				1381DEFF1C7302DC007B6374 /* Assets.xcassets */,
+				1381DF011C7302DC007B6374 /* LaunchScreen.storyboard */,
+			);
+			path = WondyDemo;
+			sourceTree = "<group>";
+		};
+		1381DF0A1C730741007B6374 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				1381DF0B1C730749007B6374 /* vc */,
+			);
+			name = ui;
+			path = src/ui;
+			sourceTree = "<group>";
+		};
+		1381DF0B1C730749007B6374 /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				1381DEF81C7302DC007B6374 /* WDCenterListVC.swift */,
+				1381DEFA1C7302DC007B6374 /* WDCenterDetailVC.swift */,
+			);
+			path = vc;
+			sourceTree = "<group>";
+		};
+		1381DF0C1C730758007B6374 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				1381DEF61C7302DC007B6374 /* AppDelegate.swift */,
+				1381DF041C7302DC007B6374 /* Info.plist */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		1381DF0D1C7307D5007B6374 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				1381DF0C1C730758007B6374 /* main */,
+				1381DF0A1C730741007B6374 /* ui */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1381DEF21C7302DB007B6374 /* WondyDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1381DF071C7302DC007B6374 /* Build configuration list for PBXNativeTarget "WondyDemo" */;
+			buildPhases = (
+				1381DEEF1C7302DB007B6374 /* Sources */,
+				1381DEF01C7302DB007B6374 /* Frameworks */,
+				1381DEF11C7302DB007B6374 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WondyDemo;
+			productName = WondyDemo;
+			productReference = 1381DEF31C7302DB007B6374 /* WondyDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1381DEEB1C7302DB007B6374 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Rocío Tovar";
+				TargetAttributes = {
+					1381DEF21C7302DB007B6374 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 1381DEEE1C7302DB007B6374 /* Build configuration list for PBXProject "WondyDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1381DEEA1C7302DB007B6374;
+			productRefGroup = 1381DEF41C7302DB007B6374 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1381DEF21C7302DB007B6374 /* WondyDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1381DEF11C7302DB007B6374 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1381DF031C7302DC007B6374 /* LaunchScreen.storyboard in Resources */,
+				1381DF001C7302DC007B6374 /* Assets.xcassets in Resources */,
+				1381DEFE1C7302DC007B6374 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1381DEEF1C7302DB007B6374 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1381DEFB1C7302DC007B6374 /* WDCenterDetailVC.swift in Sources */,
+				1381DEF71C7302DC007B6374 /* AppDelegate.swift in Sources */,
+				1381DEF91C7302DC007B6374 /* WDCenterListVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1381DEFC1C7302DC007B6374 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1381DEFD1C7302DC007B6374 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1381DF011C7302DC007B6374 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1381DF021C7302DC007B6374 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1381DF051C7302DC007B6374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1381DF061C7302DC007B6374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1381DF081C7302DC007B6374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WondyDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rtovar.WondyDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1381DF091C7302DC007B6374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WondyDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rtovar.WondyDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1381DEEE1C7302DB007B6374 /* Build configuration list for PBXProject "WondyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1381DF051C7302DC007B6374 /* Debug */,
+				1381DF061C7302DC007B6374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1381DF071C7302DC007B6374 /* Build configuration list for PBXNativeTarget "WondyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1381DF081C7302DC007B6374 /* Debug */,
+				1381DF091C7302DC007B6374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1381DEEB1C7302DB007B6374 /* Project object */;
+}
