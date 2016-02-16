@@ -11,7 +11,6 @@ import UIKit
 class WDCenterListVC: UIViewController {
 
     @IBOutlet weak var noContentView: UIView!
-    @IBOutlet weak var centersStackView: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +21,6 @@ class WDCenterListVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 

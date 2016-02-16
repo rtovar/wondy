@@ -13,6 +13,9 @@
 		1381DEFE1C7302DC007B6374 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1381DEFC1C7302DC007B6374 /* Main.storyboard */; };
 		1381DF001C7302DC007B6374 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1381DEFF1C7302DC007B6374 /* Assets.xcassets */; };
 		1381DF031C7302DC007B6374 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1381DF011C7302DC007B6374 /* LaunchScreen.storyboard */; };
+		1381DF151C736DF2007B6374 /* WDCenterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1381DF141C736DF2007B6374 /* WDCenterCell.swift */; };
+		1381DF181C737449007B6374 /* WDCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1381DF171C737449007B6374 /* WDCenter.swift */; };
+		D3D1D88CBAE3269213B61F12 /* Pods_WondyDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C85858D6AB4EE7B8CD45F8 /* Pods_WondyDemo.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		1381DEFF1C7302DC007B6374 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1381DF021C7302DC007B6374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1381DF041C7302DC007B6374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1381DF141C736DF2007B6374 /* WDCenterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WDCenterCell.swift; path = WondyDemo/src/ui/cells/WDCenterCell.swift; sourceTree = SOURCE_ROOT; };
+		1381DF171C737449007B6374 /* WDCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDCenter.swift; sourceTree = "<group>"; };
+		20C85858D6AB4EE7B8CD45F8 /* Pods_WondyDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WondyDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64664AA3660B6411506368DC /* Pods-WondyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WondyDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WondyDemo/Pods-WondyDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B5DFC35C2A947DF3D2C86189 /* Pods-WondyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WondyDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WondyDemo/Pods-WondyDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3D1D88CBAE3269213B61F12 /* Pods_WondyDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				1381DEF51C7302DC007B6374 /* WondyDemo */,
 				1381DEF41C7302DB007B6374 /* Products */,
+				7D7512AF71D47A2D5C2E7A3F /* Pods */,
+				CADF8BE8D434CCE2520E1E05 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +67,8 @@
 		1381DEF51C7302DC007B6374 /* WondyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1381DF0E1C736AF0007B6374 /* res */,
 				1381DF0D1C7307D5007B6374 /* src */,
-				1381DEFC1C7302DC007B6374 /* Main.storyboard */,
-				1381DEFF1C7302DC007B6374 /* Assets.xcassets */,
-				1381DF011C7302DC007B6374 /* LaunchScreen.storyboard */,
 			);
 			path = WondyDemo;
 			sourceTree = "<group>";
@@ -67,6 +76,7 @@
 		1381DF0A1C730741007B6374 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				1381DF111C736BE0007B6374 /* cells */,
 				1381DF0B1C730749007B6374 /* vc */,
 			);
 			name = ui;
@@ -94,10 +104,71 @@
 		1381DF0D1C7307D5007B6374 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				1381DF161C737423007B6374 /* model */,
 				1381DF0C1C730758007B6374 /* main */,
 				1381DF0A1C730741007B6374 /* ui */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		1381DF0E1C736AF0007B6374 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				1381DF101C736B65007B6374 /* img */,
+				1381DF0F1C736AFB007B6374 /* storyboards */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		1381DF0F1C736AFB007B6374 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1381DEFC1C7302DC007B6374 /* Main.storyboard */,
+				1381DF011C7302DC007B6374 /* LaunchScreen.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		1381DF101C736B65007B6374 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				1381DEFF1C7302DC007B6374 /* Assets.xcassets */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		1381DF111C736BE0007B6374 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				1381DF141C736DF2007B6374 /* WDCenterCell.swift */,
+			);
+			name = cells;
+			path = WondyDemo/src/ui/cells;
+			sourceTree = "<group>";
+		};
+		1381DF161C737423007B6374 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1381DF171C737449007B6374 /* WDCenter.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		7D7512AF71D47A2D5C2E7A3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5DFC35C2A947DF3D2C86189 /* Pods-WondyDemo.debug.xcconfig */,
+				64664AA3660B6411506368DC /* Pods-WondyDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CADF8BE8D434CCE2520E1E05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20C85858D6AB4EE7B8CD45F8 /* Pods_WondyDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1381DF071C7302DC007B6374 /* Build configuration list for PBXNativeTarget "WondyDemo" */;
 			buildPhases = (
+				1A8D46A9C71ED582D388F901 /* Check Pods Manifest.lock */,
 				1381DEEF1C7302DB007B6374 /* Sources */,
 				1381DEF01C7302DB007B6374 /* Frameworks */,
 				1381DEF11C7302DB007B6374 /* Resources */,
+				A53129B919E14D965A190A5D /* Copy Pods Resources */,
+				78E0A41CBF90002C77C1AF5B /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,12 +240,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A8D46A9C71ED582D388F901 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		78E0A41CBF90002C77C1AF5B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WondyDemo/Pods-WondyDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A53129B919E14D965A190A5D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WondyDemo/Pods-WondyDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1381DEEF1C7302DB007B6374 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1381DF181C737449007B6374 /* WDCenter.swift in Sources */,
 				1381DEFB1C7302DC007B6374 /* WDCenterDetailVC.swift in Sources */,
+				1381DF151C736DF2007B6374 /* WDCenterCell.swift in Sources */,
 				1381DEF71C7302DC007B6374 /* AppDelegate.swift in Sources */,
 				1381DEF91C7302DC007B6374 /* WDCenterListVC.swift in Sources */,
 			);
@@ -235,7 +359,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -274,7 +398,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -284,23 +408,29 @@
 		};
 		1381DF081C7302DC007B6374 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5DFC35C2A947DF3D2C86189 /* Pods-WondyDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = WondyDemo/Info.plist;
+				INFOPLIST_FILE = WondyDemo/src/main/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rtovar.WondyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
 		1381DF091C7302DC007B6374 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64664AA3660B6411506368DC /* Pods-WondyDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = WondyDemo/Info.plist;
+				INFOPLIST_FILE = WondyDemo/src/main/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rtovar.WondyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
@@ -323,6 +453,7 @@
 				1381DF091C7302DC007B6374 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
