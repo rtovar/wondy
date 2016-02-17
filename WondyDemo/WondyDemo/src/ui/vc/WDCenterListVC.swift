@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import Alamofire
 
 class WDCenterListVC: UITableViewController {
     
-    var centersArray: NSMutableArray = []
+    var centersArray: NSArray = []
     let kReuseIdentifierWDCenterCell: String = "kReuseIdentifierWDCenterCell"
     
     //MARK: Life cycle
@@ -19,8 +20,11 @@ class WDCenterListVC: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        // 
         self.refreshControl = UIRefreshControl()
-        refreshControl?.addTarget(self, action: Selector("launchCenterCall"), forControlEvents: UIControlEvents.ValueChanged)
+        refreshControl?.addTarget(self, action: Selector("launchCenterRequest"), forControlEvents: UIControlEvents.ValueChanged)
+        refreshControl?.beginRefreshing()
+        launchCenterRequest()
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,11 +47,13 @@ class WDCenterListVC: UITableViewController {
     
     //MARK: Reload data
     
-    func launchCenterCall()
-    {
-        centersArray = [WDCenter.init(identifier: "1234", name: "Super Centro", address: "Avda. Pepa, 16, 08018 Barcelona", imagesURLs: ["https://wondy.s3.amazonaws.com/shops/29/29_db316.jpg"])]
-        tableView.reloadData()
-        refreshControl?.endRefreshing()
+    func launchCenterRequest() {
+        
+        WDAPI.requestCenters { (result) in
+            self.centersArray = result
+            self.tableView.reloadData()
+            self.refreshControl?.endRefreshing()
+        }
     }
 
 }

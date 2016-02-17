@@ -14,6 +14,7 @@
 		1381DF151C736DF2007B6374 /* WDCenterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1381DF141C736DF2007B6374 /* WDCenterCell.swift */; };
 		1381DF181C737449007B6374 /* WDCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1381DF171C737449007B6374 /* WDCenter.swift */; };
 		D3D1D88CBAE3269213B61F12 /* Pods_WondyDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C85858D6AB4EE7B8CD45F8 /* Pods_WondyDemo.framework */; };
+		E3183ABD1C749A0500AC0F4E /* WDAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3183ABC1C749A0500AC0F4E /* WDAPI.swift */; };
 		E355D44E1C745C0200F5A929 /* WDCenterDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355D44C1C745C0200F5A929 /* WDCenterDetailVC.swift */; };
 		E355D44F1C745C0200F5A929 /* WDCenterListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355D44D1C745C0200F5A929 /* WDCenterListVC.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		20C85858D6AB4EE7B8CD45F8 /* Pods_WondyDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WondyDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64664AA3660B6411506368DC /* Pods-WondyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WondyDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WondyDemo/Pods-WondyDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B5DFC35C2A947DF3D2C86189 /* Pods-WondyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WondyDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WondyDemo/Pods-WondyDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E3183ABC1C749A0500AC0F4E /* WDAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WDAPI.swift; path = network/WDAPI.swift; sourceTree = "<group>"; };
 		E355D44C1C745C0200F5A929 /* WDCenterDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WDCenterDetailVC.swift; path = WondyDemo/src/ui/vc/WDCenterDetailVC.swift; sourceTree = SOURCE_ROOT; };
 		E355D44D1C745C0200F5A929 /* WDCenterListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WDCenterListVC.swift; path = WondyDemo/src/ui/vc/WDCenterListVC.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -104,6 +106,7 @@
 		1381DF0D1C7307D5007B6374 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				E3183ABB1C7499C800AC0F4E /* network */,
 				1381DF161C737423007B6374 /* model */,
 				1381DF0C1C730758007B6374 /* main */,
 				1381DF0A1C730741007B6374 /* ui */,
@@ -169,6 +172,14 @@
 				20C85858D6AB4EE7B8CD45F8 /* Pods_WondyDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3183ABB1C7499C800AC0F4E /* network */ = {
+			isa = PBXGroup;
+			children = (
+				E3183ABC1C749A0500AC0F4E /* WDAPI.swift */,
+			);
+			name = network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +309,7 @@
 				1381DF151C736DF2007B6374 /* WDCenterCell.swift in Sources */,
 				E355D44F1C745C0200F5A929 /* WDCenterListVC.swift in Sources */,
 				1381DEF71C7302DC007B6374 /* AppDelegate.swift in Sources */,
+				E3183ABD1C749A0500AC0F4E /* WDAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
