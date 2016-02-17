@@ -9,10 +9,10 @@
 import Foundation
 
 class WDCenter {
-    let identifier: String
-    let name: String
-    let address: String
-    let imagesURLs: NSMutableArray
+    var identifier: String
+    var name: String
+    var address: String
+    var imagesURLs: NSMutableArray
     
     init(identifier: String, name: String, address: String, imagesURLs: NSMutableArray) {
         self.identifier = identifier

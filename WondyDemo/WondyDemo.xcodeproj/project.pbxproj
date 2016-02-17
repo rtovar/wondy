@@ -8,21 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		1381DEF71C7302DC007B6374 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1381DEF61C7302DC007B6374 /* AppDelegate.swift */; };
-		1381DEF91C7302DC007B6374 /* WDCenterListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1381DEF81C7302DC007B6374 /* WDCenterListVC.swift */; };
-		1381DEFB1C7302DC007B6374 /* WDCenterDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1381DEFA1C7302DC007B6374 /* WDCenterDetailVC.swift */; };
 		1381DEFE1C7302DC007B6374 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1381DEFC1C7302DC007B6374 /* Main.storyboard */; };
 		1381DF001C7302DC007B6374 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1381DEFF1C7302DC007B6374 /* Assets.xcassets */; };
 		1381DF031C7302DC007B6374 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1381DF011C7302DC007B6374 /* LaunchScreen.storyboard */; };
 		1381DF151C736DF2007B6374 /* WDCenterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1381DF141C736DF2007B6374 /* WDCenterCell.swift */; };
 		1381DF181C737449007B6374 /* WDCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1381DF171C737449007B6374 /* WDCenter.swift */; };
-		D3D1D88CBAE3269213B61F12 /* Pods_WondyDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C85858D6AB4EE7B8CD45F8 /* Pods_WondyDemo.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D3D1D88CBAE3269213B61F12 /* Pods_WondyDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C85858D6AB4EE7B8CD45F8 /* Pods_WondyDemo.framework */; };
+		E355D44E1C745C0200F5A929 /* WDCenterDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355D44C1C745C0200F5A929 /* WDCenterDetailVC.swift */; };
+		E355D44F1C745C0200F5A929 /* WDCenterListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355D44D1C745C0200F5A929 /* WDCenterListVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1381DEF31C7302DB007B6374 /* WondyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WondyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1381DEF61C7302DC007B6374 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1381DEF81C7302DC007B6374 /* WDCenterListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WDCenterListVC.swift; path = WondyDemo/src/ui/vc/WDCenterListVC.swift; sourceTree = "<group>"; };
-		1381DEFA1C7302DC007B6374 /* WDCenterDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WDCenterDetailVC.swift; path = WondyDemo/src/ui/vc/WDCenterDetailVC.swift; sourceTree = "<group>"; };
 		1381DEFD1C7302DC007B6374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1381DEFF1C7302DC007B6374 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1381DF021C7302DC007B6374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +30,8 @@
 		20C85858D6AB4EE7B8CD45F8 /* Pods_WondyDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WondyDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64664AA3660B6411506368DC /* Pods-WondyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WondyDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WondyDemo/Pods-WondyDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B5DFC35C2A947DF3D2C86189 /* Pods-WondyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WondyDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WondyDemo/Pods-WondyDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E355D44C1C745C0200F5A929 /* WDCenterDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WDCenterDetailVC.swift; path = WondyDemo/src/ui/vc/WDCenterDetailVC.swift; sourceTree = SOURCE_ROOT; };
+		E355D44D1C745C0200F5A929 /* WDCenterListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WDCenterListVC.swift; path = WondyDemo/src/ui/vc/WDCenterListVC.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +86,8 @@
 		1381DF0B1C730749007B6374 /* vc */ = {
 			isa = PBXGroup;
 			children = (
-				1381DEF81C7302DC007B6374 /* WDCenterListVC.swift */,
-				1381DEFA1C7302DC007B6374 /* WDCenterDetailVC.swift */,
+				E355D44C1C745C0200F5A929 /* WDCenterDetailVC.swift */,
+				E355D44D1C745C0200F5A929 /* WDCenterListVC.swift */,
 			);
 			path = vc;
 			sourceTree = "<group>";
@@ -294,10 +294,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1381DF181C737449007B6374 /* WDCenter.swift in Sources */,
-				1381DEFB1C7302DC007B6374 /* WDCenterDetailVC.swift in Sources */,
+				E355D44E1C745C0200F5A929 /* WDCenterDetailVC.swift in Sources */,
 				1381DF151C736DF2007B6374 /* WDCenterCell.swift in Sources */,
+				E355D44F1C745C0200F5A929 /* WDCenterListVC.swift in Sources */,
 				1381DEF71C7302DC007B6374 /* AppDelegate.swift in Sources */,
-				1381DEF91C7302DC007B6374 /* WDCenterListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +359,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -398,9 +398,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -412,7 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WondyDemo/src/main/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rtovar.WondyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,7 +427,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WondyDemo/src/main/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rtovar.WondyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
