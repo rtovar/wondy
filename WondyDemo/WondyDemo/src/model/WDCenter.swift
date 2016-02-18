@@ -11,25 +11,22 @@ import Foundation
 class WDCenter {
     
     var identifier: String
-//    var long: String
-//    var lat: String
+    var long: String
+    var lat: String
     var name: String
     var address: String
     var imagesURLs: [String]
-//    var services: [String]
-//    var description: String
-    
-    init(identifier: String, name: String, address: String, imagesURLs: [String]) {
-        self.identifier = identifier
-        self.name = name
-        self.address = address
-        self.imagesURLs = imagesURLs
-    }
+    var services: [String]
+    var description: String
     
     init(jsonDict: NSDictionary) {
         self.identifier = jsonDict["id"] as! String
+        self.long = jsonDict["long"] as! String
+        self.lat = jsonDict["lat"] as! String
         self.name = jsonDict["name"] as! String
         self.address = jsonDict["address"] as! String
         self.imagesURLs = jsonDict["img"] as! [String]
+        self.services = jsonDict["services"] as! [String]
+        self.description = jsonDict["desc"] as! String
     }
 }

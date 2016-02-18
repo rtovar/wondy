@@ -55,6 +55,13 @@ class WDCenterListVC: UITableViewController {
             self.refreshControl?.endRefreshing()
         }
     }
+    
+    //MARK: Navigation
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let centerDetailVC = segue.destinationViewController as! WDCenterDetailVC
+        centerDetailVC.center = centersArray[(tableView.indexPathForSelectedRow?.row)!] as! WDCenter
+    }
 
 }
 

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1381DEF71C7302DC007B6374 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1381DEF61C7302DC007B6374 /* AppDelegate.swift */; };
 		1381DEFE1C7302DC007B6374 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1381DEFC1C7302DC007B6374 /* Main.storyboard */; };
-		1381DF001C7302DC007B6374 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1381DEFF1C7302DC007B6374 /* Assets.xcassets */; };
 		1381DF031C7302DC007B6374 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1381DF011C7302DC007B6374 /* LaunchScreen.storyboard */; };
 		1381DF151C736DF2007B6374 /* WDCenterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1381DF141C736DF2007B6374 /* WDCenterCell.swift */; };
 		1381DF181C737449007B6374 /* WDCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1381DF171C737449007B6374 /* WDCenter.swift */; };
@@ -17,13 +16,14 @@
 		E3183ABD1C749A0500AC0F4E /* WDAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3183ABC1C749A0500AC0F4E /* WDAPI.swift */; };
 		E355D44E1C745C0200F5A929 /* WDCenterDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355D44C1C745C0200F5A929 /* WDCenterDetailVC.swift */; };
 		E355D44F1C745C0200F5A929 /* WDCenterListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355D44D1C745C0200F5A929 /* WDCenterListVC.swift */; };
+		E373AAAE1C7646A30001C549 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E373AAAD1C7646A30001C549 /* Assets.xcassets */; };
+		E373AAB01C765CB30001C549 /* WDImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373AAAF1C765CB30001C549 /* WDImageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1381DEF31C7302DB007B6374 /* WondyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WondyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1381DEF61C7302DC007B6374 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1381DEFD1C7302DC007B6374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1381DEFF1C7302DC007B6374 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1381DF021C7302DC007B6374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1381DF041C7302DC007B6374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1381DF141C736DF2007B6374 /* WDCenterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WDCenterCell.swift; path = WondyDemo/src/ui/cells/WDCenterCell.swift; sourceTree = SOURCE_ROOT; };
@@ -34,6 +34,8 @@
 		E3183ABC1C749A0500AC0F4E /* WDAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WDAPI.swift; path = network/WDAPI.swift; sourceTree = "<group>"; };
 		E355D44C1C745C0200F5A929 /* WDCenterDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WDCenterDetailVC.swift; path = WondyDemo/src/ui/vc/WDCenterDetailVC.swift; sourceTree = SOURCE_ROOT; };
 		E355D44D1C745C0200F5A929 /* WDCenterListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WDCenterListVC.swift; path = WondyDemo/src/ui/vc/WDCenterListVC.swift; sourceTree = SOURCE_ROOT; };
+		E373AAAD1C7646A30001C549 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E373AAAF1C765CB30001C549 /* WDImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WDImageCell.swift; path = WondyDemo/src/ui/cells/WDImageCell.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +137,7 @@
 		1381DF101C736B65007B6374 /* img */ = {
 			isa = PBXGroup;
 			children = (
-				1381DEFF1C7302DC007B6374 /* Assets.xcassets */,
+				E373AAAD1C7646A30001C549 /* Assets.xcassets */,
 			);
 			path = img;
 			sourceTree = "<group>";
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				1381DF141C736DF2007B6374 /* WDCenterCell.swift */,
+				E373AAAF1C765CB30001C549 /* WDImageCell.swift */,
 			);
 			name = cells;
 			path = WondyDemo/src/ui/cells;
@@ -244,7 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1381DF031C7302DC007B6374 /* LaunchScreen.storyboard in Resources */,
-				1381DF001C7302DC007B6374 /* Assets.xcassets in Resources */,
+				E373AAAE1C7646A30001C549 /* Assets.xcassets in Resources */,
 				1381DEFE1C7302DC007B6374 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +311,7 @@
 				E355D44E1C745C0200F5A929 /* WDCenterDetailVC.swift in Sources */,
 				1381DF151C736DF2007B6374 /* WDCenterCell.swift in Sources */,
 				E355D44F1C745C0200F5A929 /* WDCenterListVC.swift in Sources */,
+				E373AAB01C765CB30001C549 /* WDImageCell.swift in Sources */,
 				1381DEF71C7302DC007B6374 /* AppDelegate.swift in Sources */,
 				E3183ABD1C749A0500AC0F4E /* WDAPI.swift in Sources */,
 			);
