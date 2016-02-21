@@ -11,8 +11,8 @@ import Foundation
 class WDCenter {
     
     var identifier: String
-    var long: String
-    var lat: String
+    var long: Double
+    var lat: Double
     var name: String
     var address: String
     var imagesURLs: [String]
@@ -21,8 +21,8 @@ class WDCenter {
     
     init(jsonDict: NSDictionary) {
         self.identifier = jsonDict["id"] as! String
-        self.long = jsonDict["long"] as! String
-        self.lat = jsonDict["lat"] as! String
+        self.long = Double(jsonDict["long"] as! String)!
+        self.lat = Double(jsonDict["lat"] as! String)!
         self.name = jsonDict["name"] as! String
         self.address = jsonDict["address"] as! String
         self.imagesURLs = jsonDict["img"] as! [String]

@@ -16,8 +16,16 @@
 		E3183ABD1C749A0500AC0F4E /* WDAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3183ABC1C749A0500AC0F4E /* WDAPI.swift */; };
 		E355D44E1C745C0200F5A929 /* WDCenterDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355D44C1C745C0200F5A929 /* WDCenterDetailVC.swift */; };
 		E355D44F1C745C0200F5A929 /* WDCenterListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355D44D1C745C0200F5A929 /* WDCenterListVC.swift */; };
+		E36B37F61C7898F1005A3C65 /* UIcolorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36B37F51C7898F1005A3C65 /* UIcolorExtension.swift */; };
+		E36B37FC1C78A86E005A3C65 /* UINavigationItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36B37FB1C78A86E005A3C65 /* UINavigationItemExtension.swift */; };
+		E36B37FE1C78B02F005A3C65 /* WDMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36B37FD1C78B02F005A3C65 /* WDMapVC.swift */; };
+		E36B38001C78B3B8005A3C65 /* WDAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36B37FF1C78B3B8005A3C65 /* WDAnnotation.swift */; };
+		E36B38021C78D570005A3C65 /* WDProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36B38011C78D570005A3C65 /* WDProfileVC.swift */; };
+		E36B38071C78DD13005A3C65 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36B38061C78DD13005A3C65 /* UserDefaultsHelper.swift */; };
 		E373AAAE1C7646A30001C549 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E373AAAD1C7646A30001C549 /* Assets.xcassets */; };
 		E373AAB01C765CB30001C549 /* WDImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373AAAF1C765CB30001C549 /* WDImageCell.swift */; };
+		E373AAB21C777C4B0001C549 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E373AAB11C777C4B0001C549 /* MapKit.framework */; };
+		E373AAB41C7795DD0001C549 /* WDServicesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373AAB31C7795DD0001C549 /* WDServicesListVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +42,16 @@
 		E3183ABC1C749A0500AC0F4E /* WDAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WDAPI.swift; path = network/WDAPI.swift; sourceTree = "<group>"; };
 		E355D44C1C745C0200F5A929 /* WDCenterDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WDCenterDetailVC.swift; path = WondyDemo/src/ui/vc/WDCenterDetailVC.swift; sourceTree = SOURCE_ROOT; };
 		E355D44D1C745C0200F5A929 /* WDCenterListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WDCenterListVC.swift; path = WondyDemo/src/ui/vc/WDCenterListVC.swift; sourceTree = SOURCE_ROOT; };
+		E36B37F51C7898F1005A3C65 /* UIcolorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIcolorExtension.swift; path = extensions/UIColor/UIcolorExtension.swift; sourceTree = "<group>"; };
+		E36B37FB1C78A86E005A3C65 /* UINavigationItemExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UINavigationItemExtension.swift; path = extensions/UINavigationBar/UINavigationItemExtension.swift; sourceTree = "<group>"; };
+		E36B37FD1C78B02F005A3C65 /* WDMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WDMapVC.swift; path = WondyDemo/src/ui/vc/WDMapVC.swift; sourceTree = SOURCE_ROOT; };
+		E36B37FF1C78B3B8005A3C65 /* WDAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDAnnotation.swift; sourceTree = "<group>"; };
+		E36B38011C78D570005A3C65 /* WDProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WDProfileVC.swift; path = WondyDemo/src/ui/vc/WDProfileVC.swift; sourceTree = SOURCE_ROOT; };
+		E36B38061C78DD13005A3C65 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 		E373AAAD1C7646A30001C549 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E373AAAF1C765CB30001C549 /* WDImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WDImageCell.swift; path = WondyDemo/src/ui/cells/WDImageCell.swift; sourceTree = SOURCE_ROOT; };
+		E373AAB11C777C4B0001C549 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E373AAB31C7795DD0001C549 /* WDServicesListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WDServicesListVC.swift; path = WondyDemo/src/ui/vc/WDServicesListVC.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E373AAB21C777C4B0001C549 /* MapKit.framework in Frameworks */,
 				D3D1D88CBAE3269213B61F12 /* Pods_WondyDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,6 +109,9 @@
 			children = (
 				E355D44C1C745C0200F5A929 /* WDCenterDetailVC.swift */,
 				E355D44D1C745C0200F5A929 /* WDCenterListVC.swift */,
+				E373AAB31C7795DD0001C549 /* WDServicesListVC.swift */,
+				E36B37FD1C78B02F005A3C65 /* WDMapVC.swift */,
+				E36B38011C78D570005A3C65 /* WDProfileVC.swift */,
 			);
 			path = vc;
 			sourceTree = "<group>";
@@ -108,6 +128,8 @@
 		1381DF0D1C7307D5007B6374 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				E36B38051C78DCF1005A3C65 /* utils */,
+				E36B37F41C7898BC005A3C65 /* extensions */,
 				E3183ABB1C7499C800AC0F4E /* network */,
 				1381DF161C737423007B6374 /* model */,
 				1381DF0C1C730758007B6374 /* main */,
@@ -156,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				1381DF171C737449007B6374 /* WDCenter.swift */,
+				E36B37FF1C78B3B8005A3C65 /* WDAnnotation.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -172,6 +195,7 @@
 		CADF8BE8D434CCE2520E1E05 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E373AAB11C777C4B0001C549 /* MapKit.framework */,
 				20C85858D6AB4EE7B8CD45F8 /* Pods_WondyDemo.framework */,
 			);
 			name = Frameworks;
@@ -183,6 +207,23 @@
 				E3183ABC1C749A0500AC0F4E /* WDAPI.swift */,
 			);
 			name = network;
+			sourceTree = "<group>";
+		};
+		E36B37F41C7898BC005A3C65 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E36B37F51C7898F1005A3C65 /* UIcolorExtension.swift */,
+				E36B37FB1C78A86E005A3C65 /* UINavigationItemExtension.swift */,
+			);
+			name = extensions;
+			sourceTree = "<group>";
+		};
+		E36B38051C78DCF1005A3C65 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				E36B38061C78DD13005A3C65 /* UserDefaultsHelper.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +261,7 @@
 				TargetAttributes = {
 					1381DEF21C7302DB007B6374 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = DHBKG3S552;
 					};
 				};
 			};
@@ -307,13 +349,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E36B38071C78DD13005A3C65 /* UserDefaultsHelper.swift in Sources */,
 				1381DF181C737449007B6374 /* WDCenter.swift in Sources */,
 				E355D44E1C745C0200F5A929 /* WDCenterDetailVC.swift in Sources */,
 				1381DF151C736DF2007B6374 /* WDCenterCell.swift in Sources */,
 				E355D44F1C745C0200F5A929 /* WDCenterListVC.swift in Sources */,
+				E36B37F61C7898F1005A3C65 /* UIcolorExtension.swift in Sources */,
 				E373AAB01C765CB30001C549 /* WDImageCell.swift in Sources */,
+				E373AAB41C7795DD0001C549 /* WDServicesListVC.swift in Sources */,
+				E36B38021C78D570005A3C65 /* WDProfileVC.swift in Sources */,
 				1381DEF71C7302DC007B6374 /* AppDelegate.swift in Sources */,
+				E36B37FE1C78B02F005A3C65 /* WDMapVC.swift in Sources */,
+				E36B37FC1C78A86E005A3C65 /* UINavigationItemExtension.swift in Sources */,
 				E3183ABD1C749A0500AC0F4E /* WDAPI.swift in Sources */,
+				E36B38001C78B3B8005A3C65 /* WDAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,11 +477,14 @@
 			baseConfigurationReference = B5DFC35C2A947DF3D2C86189 /* Pods-WondyDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WondyDemo/src/main/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rtovar.WondyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
@@ -442,11 +494,14 @@
 			baseConfigurationReference = 64664AA3660B6411506368DC /* Pods-WondyDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WondyDemo/src/main/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rtovar.WondyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;

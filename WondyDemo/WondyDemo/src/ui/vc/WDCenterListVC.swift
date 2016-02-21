@@ -20,16 +20,35 @@ class WDCenterListVC: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        // 
-        self.refreshControl = UIRefreshControl()
-        refreshControl?.addTarget(self, action: Selector("launchCenterRequest"), forControlEvents: UIControlEvents.ValueChanged)
-        refreshControl?.beginRefreshing()
+        setup()
         launchCenterRequest()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //MARK: Setup methods
+    
+    func setup() {
+        setupRefreshControl()
+        setupTableView()
+        setupNavigationBar()
+    }
+    
+    func setupRefreshControl() {
+        self.refreshControl = UIRefreshControl()
+        refreshControl?.addTarget(self, action: Selector("launchCenterRequest"), forControlEvents: UIControlEvents.ValueChanged)
+        refreshControl?.beginRefreshing()
+    }
+    
+    func setupTableView() {
+        tableView.tableFooterView = UIView()
+    }
+    
+    func setupNavigationBar() {
+        self.navigationItem.setTitleImage("wondy_selected", imageTintColor: UIColor.themeColor())
     }
     
     //MARK: UITableViewDatasource

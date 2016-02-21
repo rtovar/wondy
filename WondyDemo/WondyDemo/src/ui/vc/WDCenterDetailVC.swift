@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class WDCenterDetailVC: UIViewController, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource {
     
@@ -14,10 +15,11 @@ class WDCenterDetailVC: UIViewController, UITableViewDataSource, UICollectionVie
     let kReuseIdentifierServiceCell: String = "kReuseIdentifierServiceCell"
     
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var imagesCollectionView: UICollectionView!
-    @IBOutlet weak var servicesTableView: UITableView!
+    @IBOutlet weak var descriptionTextview: UITextView!
+    @IBOutlet weak var servicesButton: UIButton!
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var mapView: MKMapView!
     
     var center: WDCenter!
     
@@ -26,7 +28,7 @@ class WDCenterDetailVC: UIViewController, UITableViewDataSource, UICollectionVie
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        servicesTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: kReuseIdentifierServiceCell)
+        self.navigationItem.setTitleImage("wondy_selected", imageTintColor: UIColor.themeColor())
         refreshUI()
     }
 
@@ -39,8 +41,11 @@ class WDCenterDetailVC: UIViewController, UITableViewDataSource, UICollectionVie
     
     func refreshUI() {
         nameLabel.text = center.name
-        descriptionLabel.text = center.description
+        descriptionTextview.text = center.description
+        servicesButton.setTitle(String(format: "%d services", center.services.count), forState: UIControlState.Normal)
         addressLabel.text = center.address
+        mapView.setRegion(MKCoordinateRegion.init(center: CLLocationCoordinate2D.init(latitude:center.lat, longitude:center.long), span: MKCoordinateSpan.init(latitudeDelta:0.01, longitudeDelta:0.01)),
+            animated: true)
     }
     
     //MARK: UICollectionViewDataSource
@@ -67,6 +72,28 @@ class WDCenterDetailVC: UIViewController, UITableViewDataSource, UICollectionVie
         cell.textLabel?.text = center.services[indexPath.row]
         
         return cell
+    }
+    
+    //MARK: IBActions
+    
+    @IBAction func didTapAddressButton() {
+        let regionSpan = mapView.region
+        let options = [
+            MKLaunchOptionsMapCenterKey: NSValue(MKCoordinate: regionSpan.center),
+            MKLaunchOptionsMapSpanKey: NSValue(MKCoordinateSpan: regionSpan.span)
+        ]
+        let placemark = MKPlacemark(coordinate: mapView.centerCoordinate, addressDictionary: nil)
+        let mapItem = MKMapItem(placemark: placemark)
+        mapItem.name = center.name
+        mapItem.openInMapsWithLaunchOptions(options)
+    }
+    
+    //MARK: Navigation
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let servicesListVC = segue.destinationViewController as! WDServicesListVC
+        servicesListVC.servicesArray = center.services
+        servicesListVC.centerName = center.name
     }
 
 }
