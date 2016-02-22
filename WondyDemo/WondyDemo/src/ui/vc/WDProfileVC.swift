@@ -26,7 +26,7 @@ class WDProfileVC: UIViewController, UITextViewDelegate, UIImagePickerController
     var allowNotificationsStored: Bool = false
     var imageStored: UIImage?
     
-    //MARK: Life cycle
+    //MARK: - Life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +54,7 @@ class WDProfileVC: UIViewController, UITextViewDelegate, UIImagePickerController
         notificationsSwitch.on = allowNotificationsStored
     }
     
-    //MARK: IBActions
+    //MARK: - IBActions
     
     @IBAction func didTapEditImageButton() {
         let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .ActionSheet)
@@ -95,13 +95,14 @@ class WDProfileVC: UIViewController, UITextViewDelegate, UIImagePickerController
         
         UserDefaultsHelper.saveProfileData(userNameStored!, allowNotifications: allowNotificationsStored, userImage: imageStored)
         saveButton.enabled = false
+        nameTextView.resignFirstResponder()
     }
     
     @IBAction func didChangeNotificationsSwitch(sender: UISwitch) {
         updateSaveButton()
     }
     
-    //MARK:
+    //MARK: - Save button status
     
     func valuesChanged() -> Bool {
         return nameTextView.text != "" &&
@@ -114,7 +115,7 @@ class WDProfileVC: UIViewController, UITextViewDelegate, UIImagePickerController
         saveButton.enabled = valuesChanged()
     }
     
-    //MARK: UITextViewDelegates
+    //MARK: - UITextViewDelegates
     
     func textViewShouldBeginEditing(textView: UITextView) -> Bool {
         if textView.text == kUserNameHint {

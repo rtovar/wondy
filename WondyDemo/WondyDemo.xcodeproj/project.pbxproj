@@ -12,7 +12,9 @@
 		1381DF031C7302DC007B6374 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1381DF011C7302DC007B6374 /* LaunchScreen.storyboard */; };
 		1381DF151C736DF2007B6374 /* WDCenterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1381DF141C736DF2007B6374 /* WDCenterCell.swift */; };
 		1381DF181C737449007B6374 /* WDCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1381DF171C737449007B6374 /* WDCenter.swift */; };
-		D3D1D88CBAE3269213B61F12 /* Pods_WondyDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C85858D6AB4EE7B8CD45F8 /* Pods_WondyDemo.framework */; };
+		1389AED31C7B1C42007CA248 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E373AAB11C777C4B0001C549 /* MapKit.framework */; };
+		1389AED41C7B1C4D007CA248 /* Pods_WondyDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C85858D6AB4EE7B8CD45F8 /* Pods_WondyDemo.framework */; };
+		1389AED51C7B1C4D007CA248 /* Pods_WondyDemo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20C85858D6AB4EE7B8CD45F8 /* Pods_WondyDemo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E3183ABD1C749A0500AC0F4E /* WDAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3183ABC1C749A0500AC0F4E /* WDAPI.swift */; };
 		E355D44E1C745C0200F5A929 /* WDCenterDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355D44C1C745C0200F5A929 /* WDCenterDetailVC.swift */; };
 		E355D44F1C745C0200F5A929 /* WDCenterListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355D44D1C745C0200F5A929 /* WDCenterListVC.swift */; };
@@ -24,9 +26,22 @@
 		E36B38071C78DD13005A3C65 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36B38061C78DD13005A3C65 /* UserDefaultsHelper.swift */; };
 		E373AAAE1C7646A30001C549 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E373AAAD1C7646A30001C549 /* Assets.xcassets */; };
 		E373AAB01C765CB30001C549 /* WDImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373AAAF1C765CB30001C549 /* WDImageCell.swift */; };
-		E373AAB21C777C4B0001C549 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E373AAB11C777C4B0001C549 /* MapKit.framework */; };
 		E373AAB41C7795DD0001C549 /* WDServicesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373AAB31C7795DD0001C549 /* WDServicesListVC.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1389AED61C7B1C4D007CA248 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1389AED51C7B1C4D007CA248 /* Pods_WondyDemo.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1381DEF31C7302DB007B6374 /* WondyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WondyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,11 +54,11 @@
 		20C85858D6AB4EE7B8CD45F8 /* Pods_WondyDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WondyDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64664AA3660B6411506368DC /* Pods-WondyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WondyDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WondyDemo/Pods-WondyDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B5DFC35C2A947DF3D2C86189 /* Pods-WondyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WondyDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WondyDemo/Pods-WondyDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		E3183ABC1C749A0500AC0F4E /* WDAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WDAPI.swift; path = network/WDAPI.swift; sourceTree = "<group>"; };
+		E3183ABC1C749A0500AC0F4E /* WDAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDAPI.swift; sourceTree = "<group>"; };
 		E355D44C1C745C0200F5A929 /* WDCenterDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WDCenterDetailVC.swift; path = WondyDemo/src/ui/vc/WDCenterDetailVC.swift; sourceTree = SOURCE_ROOT; };
 		E355D44D1C745C0200F5A929 /* WDCenterListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WDCenterListVC.swift; path = WondyDemo/src/ui/vc/WDCenterListVC.swift; sourceTree = SOURCE_ROOT; };
-		E36B37F51C7898F1005A3C65 /* UIcolorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIcolorExtension.swift; path = extensions/UIColor/UIcolorExtension.swift; sourceTree = "<group>"; };
-		E36B37FB1C78A86E005A3C65 /* UINavigationItemExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UINavigationItemExtension.swift; path = extensions/UINavigationBar/UINavigationItemExtension.swift; sourceTree = "<group>"; };
+		E36B37F51C7898F1005A3C65 /* UIcolorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIcolorExtension.swift; sourceTree = "<group>"; };
+		E36B37FB1C78A86E005A3C65 /* UINavigationItemExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationItemExtension.swift; sourceTree = "<group>"; };
 		E36B37FD1C78B02F005A3C65 /* WDMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WDMapVC.swift; path = WondyDemo/src/ui/vc/WDMapVC.swift; sourceTree = SOURCE_ROOT; };
 		E36B37FF1C78B3B8005A3C65 /* WDAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDAnnotation.swift; sourceTree = "<group>"; };
 		E36B38011C78D570005A3C65 /* WDProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WDProfileVC.swift; path = WondyDemo/src/ui/vc/WDProfileVC.swift; sourceTree = SOURCE_ROOT; };
@@ -59,8 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E373AAB21C777C4B0001C549 /* MapKit.framework in Frameworks */,
-				D3D1D88CBAE3269213B61F12 /* Pods_WondyDemo.framework in Frameworks */,
+				1389AED41C7B1C4D007CA248 /* Pods_WondyDemo.framework in Frameworks */,
+				1389AED31C7B1C42007CA248 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,8 +115,7 @@
 				1381DF111C736BE0007B6374 /* cells */,
 				1381DF0B1C730749007B6374 /* vc */,
 			);
-			name = ui;
-			path = src/ui;
+			path = ui;
 			sourceTree = "<group>";
 		};
 		1381DF0B1C730749007B6374 /* vc */ = {
@@ -170,8 +184,7 @@
 				1381DF141C736DF2007B6374 /* WDCenterCell.swift */,
 				E373AAAF1C765CB30001C549 /* WDImageCell.swift */,
 			);
-			name = cells;
-			path = WondyDemo/src/ui/cells;
+			path = cells;
 			sourceTree = "<group>";
 		};
 		1381DF161C737423007B6374 /* model */ = {
@@ -181,6 +194,22 @@
 				E36B37FF1C78B3B8005A3C65 /* WDAnnotation.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		1389AECA1C7B1548007CA248 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				E36B37F51C7898F1005A3C65 /* UIcolorExtension.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		1389AECB1C7B155D007CA248 /* UINavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				E36B37FB1C78A86E005A3C65 /* UINavigationItemExtension.swift */,
+			);
+			path = UINavigationBar;
 			sourceTree = "<group>";
 		};
 		7D7512AF71D47A2D5C2E7A3F /* Pods */ = {
@@ -206,16 +235,16 @@
 			children = (
 				E3183ABC1C749A0500AC0F4E /* WDAPI.swift */,
 			);
-			name = network;
+			path = network;
 			sourceTree = "<group>";
 		};
 		E36B37F41C7898BC005A3C65 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
-				E36B37F51C7898F1005A3C65 /* UIcolorExtension.swift */,
-				E36B37FB1C78A86E005A3C65 /* UINavigationItemExtension.swift */,
+				1389AECB1C7B155D007CA248 /* UINavigationBar */,
+				1389AECA1C7B1548007CA248 /* UIColor */,
 			);
-			name = extensions;
+			path = extensions;
 			sourceTree = "<group>";
 		};
 		E36B38051C78DCF1005A3C65 /* utils */ = {
@@ -239,6 +268,7 @@
 				1381DEF11C7302DB007B6374 /* Resources */,
 				A53129B919E14D965A190A5D /* Copy Pods Resources */,
 				78E0A41CBF90002C77C1AF5B /* Embed Pods Frameworks */,
+				1389AED61C7B1C4D007CA248 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,7 +291,7 @@
 				TargetAttributes = {
 					1381DEF21C7302DB007B6374 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = DHBKG3S552;
+						DevelopmentTeam = C2UZU6ZLJE;
 					};
 				};
 			};
@@ -270,7 +300,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 			);
 			mainGroup = 1381DEEA1C7302DB007B6374;
@@ -477,12 +506,12 @@
 			baseConfigurationReference = B5DFC35C2A947DF3D2C86189 /* Pods-WondyDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: RocÃÆÃÂ­o Tovar (LTF8945TM9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: RocÃÆÃÂ­o Tovar (LTF8945TM9)";
 				INFOPLIST_FILE = WondyDemo/src/main/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rtovar.WondyDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tempos21.rtovar.WondyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -494,14 +523,14 @@
 			baseConfigurationReference = 64664AA3660B6411506368DC /* Pods-WondyDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: TEMPOS 21 INNOVACION EN APLICACIONES MOVILES S.A.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: TEMPOS 21 INNOVACION EN APLICACIONES MOVILES S.A.";
 				INFOPLIST_FILE = WondyDemo/src/main/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rtovar.WondyDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tempos21.rtovar.WondyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "22bc5ad7-3ebc-4023-aebc-05443b99abf9";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;

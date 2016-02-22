@@ -1,0 +1,42 @@
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "BrX-kF-alS"; */
+"BrX-kF-alS.title" = "Perfil";
+
+/* Class = "UILabel"; text = "Center Address"; ObjectID = "Dbt-ai-T3T"; */
+"Dbt-ai-T3T.text" = "Center Address";
+
+/* Class = "UITextView"; text = "Name Surname"; ObjectID = "Dif-Qu-eXz"; */
+"Dif-Qu-eXz.text" = "Name Surname";
+
+/* Class = "UILabel"; text = "Center Name"; ObjectID = "FRh-7c-Lwh"; */
+"FRh-7c-Lwh.text" = "Center Name";
+
+/* Class = "UILabel"; text = "Allow push notifications"; ObjectID = "Lt3-QP-Qnt"; */
+"Lt3-QP-Qnt.text" = "Permitir notificaciones push";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "WjD-cZ-3jq"; */
+"WjD-cZ-3jq.title" = "Inicio";
+
+/* Class = "UITabBarItem"; title = "Map"; ObjectID = "cPa-gy-q4n"; */
+"cPa-gy-q4n.title" = "Mapa";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "flK-w3-zL4"; */
+"flK-w3-zL4.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UILabel"; text = "Center Name"; ObjectID = "ft0-6f-aXw"; */
+"ft0-6f-aXw.text" = "Center Name";
+
+/* Class = "UITableViewController"; title = " "; ObjectID = "hNU-j6-TuF"; */
+"hNU-j6-TuF.title" = " ";
+
+/* Class = "UIButton"; normalTitle = "Save changes"; ObjectID = "kOF-gX-GXu"; */
+"kOF-gX-GXu.normalTitle" = "Guardar cambios";
+
+/* Class = "UIButton"; normalTitle = "Tap to edit"; ObjectID = "mcd-fw-TrO"; */
+"mcd-fw-TrO.normalTitle" = "Clic aquí para editar";
+
+/* Class = "UIButton"; normalTitle = "5 Services"; ObjectID = "yUC-oI-RIu"; */
+"yUC-oI-RIu.normalTitle" = "5 Services";
+
+/* Class = "UILabel"; text = "Center Address"; ObjectID = "zbf-xe-Mk4"; */
+"zbf-xe-Mk4.text" = "Center Address";
